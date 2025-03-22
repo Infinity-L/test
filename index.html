@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简单网页</title>
+    <title>一次简单的尝试</title>
     <style>
         body {
             background-color: white;
             text-align: center;
             font-family: Arial, sans-serif;
         }
+
         .container {
             margin-top: 20px;
         }
+
         .links {
             margin-top: 20px;
         }
+
         .links a {
             display: block;
             margin: 10px 0;
             text-decoration: none;
             color: blue;
         }
+
         .container img {
             width: 100px;
             height: 100px;
             object-fit: cover;
         }
     </style>
+    <!-- 看板娘开始 -->
+    <link href='https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1-2/kbn/pio.css' rel='stylesheet'
+        type='text/css' />
+    <!-- 可选位置： left 或 right -->
+    <div class="pio-container left">
+        <div class="pio-action"></div>
+        <!-- 高度和宽度根据每个模型的不同 进行调整 -->
+        <canvas id="pio" width="170" height="295"></canvas>
+    </div>
+    <script src='https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1-2/kbn/l2d.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1-2/kbn/pio.js'></script>
+    <script>
+        var pio = new Paul_Pio({
+            "mode": "fixed",
+            "touch": ["点击提示文字在kbn/pio.js中修改"],
+            "hidden": false, //手机端是否隐藏
+            "referer": "?欢迎来自 %t 的朋友~",
+            "content": {
+                "welcome": "?欢迎来到本站！"
+            },
+            // 可用参数：
+            // "leimu" "1" "2" "kangna" "qingye" "shawu" "xiaomai" "zhinai"
+
+            // 举例子：
+            // "model": ["https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1/kbn/ 可修改参数位置 /model.json"],
+
+            "model": ["https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1/kbn/xiaomai/model.json"],
+
+            "tips": true //如果设置为false则会优先显示welcome中的内容“欢迎~”
+        });
+    </script>
 </head>
+
 <body>
     <div class="container">
         <img src="https://i.imgs.ovh/2025/03/16/CpvOm.jpeg" alt="网站图片">
         <div class="links">
             <a href="https://github.com/Infinity-L/test">这个尝试的github地址</a>
-            <a href="https://space.bilibili.com/1407680514?spm_id_from=333.1007.0.0"<>有样学样的b站主页</a>
+            <a href="https://space.bilibili.com/1407680514?spm_id_from=333.1007.0.0" <>有样学样的b站主页</a>
             <a href="#">链接3</a>
         </div>
     </div>
 </body>
+
 </html>
