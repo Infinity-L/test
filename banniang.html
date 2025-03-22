@@ -1,31 +1,62 @@
-<div class="pio-container left">
-    <div class="pio-action"></div>
-    <canvas id="pio" width="200" height="250"></canvas>
-</div>
-<link rel="stylesheet" href="banniang/css/pio.css">
-<script src="banniang/js/pio.js"></script>
-<script src="banniang/js/l2d.js"></script>
-<script>
-    var pio = new Paul_Pio({
-    "mode": "fixed",
-    "tips": true,
-    "hidden": true,
-    "content": {
-        "welcome": ["欢迎来到阿牛的网站！", "博主每天都有些折腾记录，欢迎前往他的小窝阅读~"],
-    },
-    "model": [
-    "banniang/live2d-widget-models/live2d-widget-model-miku/assets/miku.model.json", //初音
-    "banniang/live2d-widget-models/live2d-widget-model-shizuku/assets/shizuku.model.json",// 萌娘
-    "banniang/live2d-widget-models/live2d-widget-model-chitose/assets/chitose.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-koharu/assets/koharu.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-haru/01/assets/haru01.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-wanko/assets/wanko.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-vert/vert_classic/vert_classic.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-nepgear_extra/nepgear_extra/nepgear_extra.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-haruto/assets/haruto.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-haru/02/assets/haru02.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-histoire/histoire/histoire.model.json",
-    "banniang/live2d-widget-models/live2d-widget-model-blanc_normal/blanc_normal/blanc_normal.model.json",
-    ]
-});
-</script>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新页面</title>
+    <link rel="stylesheet" href="banniang/css/pio.css">
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到新页面</h1>
+        <p>这是一个新的页面</p>
+        <a class="back-link" href="index.html">返回主页</a>
+    </div>
+    <div class="pio-container left">
+        <div class="pio-action"></div>
+        <canvas id="pio" width="200" height="250"></canvas>
+    </div>
+    <script src="banniang/js/pio.js"></script>
+    <script src="banniang/js/l2d.js"></script>
+    <script>
+        var pio = new Paul_Pio({
+            "mode": "fixed",
+            "tips": true,
+            "hidden": true,
+            "content": {
+                "welcome": ["欢迎来到L的网站！", "博主每天都有些折腾记录，欢迎前往他的小窝阅读~"],
+            },
+            "model": [
+                "banniang/live2d-widget-models/live2d-widget-model-miku/assets/miku.model.json", // 初音
+                "banniang/live2d-widget-models/live2d-widget-model-shizuku/assets/shizuku.model.json", // 萌娘
+                "banniang/live2d-widget-models/live2d-widget-model-chitose/assets/chitose.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-koharu/assets/koharu.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-haru/01/assets/haru01.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-wanko/assets/wanko.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-vert/vert_classic/vert_classic.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-nepgear_extra/nepgear_extra/nepgear_extra.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-haruto/assets/haruto.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-haru/02/assets/haru02.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-histoire/histoire/histoire.model.json",
+                "banniang/live2d-widget-models/live2d-widget-model-blanc_normal/blanc_normal/blanc_normal.model.json"
+            ]
+        });
+    </script>
+</body>
+</html>
