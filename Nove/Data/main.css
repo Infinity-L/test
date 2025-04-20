@@ -1,0 +1,202 @@
+header{
+    font-size: 30px;
+    font-family: serif;
+    margin: 20px;
+    padding-bottom: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+main{
+    margin: 20px;
+}
+
+footer{
+    font-family: serif;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+br{
+    text-indent: 1em;
+}
+
+.hr_mb{
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+.header_sub{
+    margin-top: 1em;
+    font-size: 25px;
+}
+
+
+.mb1{
+    margin-bottom: 2em;
+}
+.mb2{
+    margin-bottom: 3em;
+}
+.mb3{
+    margin-bottom: 4em;
+}
+.mb5{
+    margin-bottom: 6em;
+}
+.mb7{
+    margin-bottom: 8em;
+    }
+.mb10{
+    margin-bottom: 11em;
+    }
+.card{
+    background-color: whitesmoke;
+    text-align: center;
+    border: 4px double #333333;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin: 0px auto;
+}
+.board{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    border: 4px double white;
+}
+
+.board1{
+    font-family: serif;
+}
+
+/* 説明者の説明ウィンドウ */
+.explain{
+    background-color: #fff001;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 480px;
+    padding: 10px 30px;
+    font-size: large;
+}
+
+/* 妄想者の文字色 */
+.fantasy{
+    color: aliceblue;
+}
+
+[v-cloak]{
+    display: none;
+}
+/* 妄想者の入力テキストサイズ */
+.inputFantasy{
+    width:50px;
+}
+
+
+@font-face {
+    font-family: 'board1Font';
+    src: url("Fonts/zh_board1.ttf");
+}
+@font-face {
+    font-family: 'board2Font';
+    src: url("Fonts/zh_board2.ttf");
+}
+@font-face {
+    font-family: 'board3Font';
+    src: url("Fonts/zh_board3.ttf");
+}
+@font-face {
+    font-family: 'board4Font';
+    src: url("Fonts/zh_board4.ttf");
+}
+@font-face {
+    font-family: 'board5Font';
+    src: url("Fonts/zh_board5.ttf");
+}
+@font-face {
+    font-family: 'board6Font';
+    src: url("Fonts/zh_board6.ttf");
+}
+.board1 {
+    font-family:'board1Font';
+    font-size: 160%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.board2 {
+    font-family:'board2Font';
+    font-size: 160%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.board3 {
+    font-family:'board3Font';
+    font-size: 160%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.board4 {
+    font-family:'board4Font';
+    font-size: 160%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.board5 {
+    font-family:'board5Font';
+    font-size: 160%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.board6 {
+    font-family:'board6Font';
+    font-size: 160%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Volume1_body {
+    background: white;
+}
+
+.Volume1_container  {
+    width: 700px;
+    margin: 0px auto;
+    padding: 30px;
+    border: 5px double #333333;
+    background-color: aliceblue;
+}
+
+.tmp  {
+    background-color: aliceblue;
+}
+
+.Volume2_body {
+    background: #333333;
+}
+
+.Volume2_container  {
+    width: 700px;
+    margin: 0px auto;
+    padding: 30px;
+    background: #FFF;
+}
+
+.Volume2_letter  {
+    margin: 0px auto;
+    padding: 50px;
+    background: lavender;
+    font-weight: bold;
+    border: 5px double #333333;
+}
+
+.Volume2_story  {
+    margin: 0px auto;
+    padding: 50px;
+    background: aliceblue;
+    border: 5px double #333333;
+}
+
+strong {
+    font-size: large;
+}
