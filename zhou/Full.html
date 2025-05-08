@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>导航页</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .button-container {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 10px;
+      z-index: 1001;
+    }
+
+    .button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      z-index: 1000;
+    }
+
+    .nav-image-container {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      transition: top 0.5s ease;
+    }
+
+    .nav-image-container.active {
+      top: 0;
+    }
+
+    .nav-image {
+      width: 100%;
+      display: block;
+    }
+
+    .clickable-area {
+      position: absolute;
+      z-index: 1002;
+    }
+    .clickable-area:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* 白色，透明度可调 */
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <button class="button" onclick="location.href='index.html'">返回主页</button>
+    <button class="button" onclick="toggleNav()">展开导航</button>
+  </div>
+
+  <div class="nav-overlay" id="navOverlay" onclick="closeNav()">
+    <div class="nav-image-container" id="navImageContainer">
+      <img src="https://i.imgs.ovh/2025/05/08/v6Sig.png" alt="导航图" class="nav-image">
+
+      <!-- 首页 -->
+      <a class="clickable-area" href="首页.html" style="top: 75%; left: 4.5%; width: 5%; height: 18%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 编队 -->
+      <a class="clickable-area" href="编队.html" style="top: 20%; left: 16%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 干员 -->
+      <a class="clickable-area" href="干员.html" style="top: 75%; left: 21.6%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 档案 -->
+      <a class="clickable-area" href="档案.html" style="top: 74%; left: 32.7%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 终端 -->
+      <a class="clickable-area" href="终端.html" style="top: 13%; left: 39%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 基建 -->
+      <a class="clickable-area" href="基建.html" style="top: 13%; left: 51.3%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 公开招募 -->
+      <a class="clickable-area" href="公开招募.html" style="top: 75%; left: 72%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 干员寻访 -->
+      <a class="clickable-area" href="干员寻访.html" style="top: 75%; left: 81.9%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+
+      <!-- 采购中心 -->
+      <a class="clickable-area" href="采购中心.html" style="top: 75%; left: 91.2%; width: 5%; height: 20%;" onclick="event.stopPropagation();"></a>
+    </div>
+  </div>
+
+  <script>
+    const navOverlay = document.getElementById('navOverlay');
+    const navImageContainer = document.getElementById('navImageContainer');
+
+    function toggleNav() {
+      navOverlay.style.display = 'block';
+      setTimeout(() => {
+        navImageContainer.classList.add('active');
+      }, 10);
+    }
+
+    function closeNav() {
+      navImageContainer.classList.remove('active');
+      setTimeout(() => {
+        navOverlay.style.display = 'none';
+      }, 500);
+    }
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        closeNav();
+      }
+    });
+  </script>
+
+</body>
+</html>
